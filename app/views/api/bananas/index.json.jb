@@ -1,1 +1,7 @@
-{message: "baaaaaananas"}
+@bananas.map do |banana|
+  {
+    size: banana[:size],
+    color: banana[:color],
+    screaming: banana[:screaming]
+  }
+end
