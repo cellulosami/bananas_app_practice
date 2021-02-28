@@ -27,4 +27,10 @@ class Api::BananasController < ApplicationController
     @banana.save
     render 'show.json.jb'
   end
+
+  def destroy
+    @banana = Banana.find_by(id: params[:id])
+    @banana.destroy
+    render json: {message: "The banana has been eradicated"}
+  end
 end
