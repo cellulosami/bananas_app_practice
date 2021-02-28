@@ -1,5 +1,6 @@
 @bananas.map do |banana|
   {
+    id: banana[:id]
     size: banana[:size],
     color: banana[:color],
     screaming: banana[:screaming]
