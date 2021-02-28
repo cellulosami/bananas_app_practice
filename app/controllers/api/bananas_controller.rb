@@ -11,9 +11,9 @@ class Api::BananasController < ApplicationController
 
   def create
     @banana = Banana.new(
-      size: "soupy",
-      color: "brown",
-      screaming: "possibly"
+      size: params[:size],
+      color: params[:color],
+      screaming: params[:screaming]
     )
     @banana.save
     render 'show.json.jb'
